@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6987371737431871052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6987371737431871054}
+  - component: {fileID: 6987371737431871055}
+  m_Layer: 0
+  m_Name: AnimalSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6987371737431871054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987371737431871052}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.32344866, y: 0.07, z: 29.44}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1981115645497802604}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &6987371737431871055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987371737431871052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72e6e2789d1de49feba49000a2827e6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimalPrefabs:
+  - {fileID: 8900933369658092766, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+  - {fileID: 2455604130760183298, guid: 1665f50ab29ab4b308869dc82d122d81, type: 3}
+  - {fileID: 6287837903516217007, guid: 595bcc173ac51453da29bfe76465ae9c, type: 3}
+  - {fileID: 7735262347126759938, guid: c196fbd287b364106ac12560270e9128, type: 3}
+  - {fileID: 6237485419346319915, guid: 68ef1590d74c94149a1c491f0cc9cb07, type: 3}
+  - {fileID: 6760522880673637395, guid: bfd84afe14a2f4bb9afa435de4ba7bac, type: 3}
+  - {fileID: 1270503366735521003, guid: 3cb65dccb73704357940c6adff912b5f, type: 3}
+  - {fileID: 586589346659497091, guid: cb916a80816094d42a21ece4e8e7d26d, type: 3}
+  - {fileID: 3581599701171032008, guid: f30a7352ec41c42dab83bf63874705a4, type: 3}
+  - {fileID: 9157165046978143301, guid: 81a58e18a7447492a8a006fd8173ca9d, type: 3}
+  - {fileID: 7131900631991732378, guid: 8b55f0f3467424283b6f8788433a60f3, type: 3}
+  - {fileID: 1467224235763144196, guid: f1c4dec2614c544708c72ee62f834e82, type: 3}
+  - {fileID: 6903010785040152508, guid: baa67a21809cf47fc906791a7951f4af, type: 3}
+  - {fileID: 5418312778002089447, guid: 6154c20edc8f74957b605b4bbb838fb9, type: 3}
+  - {fileID: 8808751529794201466, guid: 9ee7cfc2a84934821882fb5407681567, type: 3}
+  - {fileID: 5975952114542664985, guid: 5b0247b0c706148b39ea41cc2053f7f8, type: 3}
+  - {fileID: 6098603360304551375, guid: cb1a8a3833b494601af79e218efd4756, type: 3}
+  - {fileID: 2144687178622057411, guid: 14ff96d79f5c24eb6be8832f32f35c66, type: 3}
+  Left: -20
+  Right: 20
+  spawnIntervalMin: 0.5
+  spawnIntervalMax: 3
+--- !u!1001 &6987371739109661412
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6987371737431871054}
+    m_Modifications:
+    - target: {fileID: 8900933369657910664, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900933369657910664, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900933369657910664, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900933369657910664, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900933369657910664, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900933369657910664, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900933369657910664, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900933369657910664, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900933369657910664, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900933369657910664, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900933369657910664, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900933369658092766, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+      propertyPath: m_Name
+      value: Dog_Beagle_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+--- !u!4 &1981115645497802604 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8900933369657910664, guid: 79070dc0fe2cc4eb28f7c59f6e4b5c89, type: 3}
+  m_PrefabInstance: {fileID: 6987371739109661412}
+  m_PrefabAsset: {fileID: 0}

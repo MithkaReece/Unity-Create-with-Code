@@ -56,12 +56,15 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/PlayerController.cs" />
-    <Compile Include="Assets/Scripts/MoveForward.cs" />
-    <Compile Include="Assets/Scripts/AnimalSpawner.cs" />
     <Compile Include="Assets/Scripts/EatFoodCollision.cs" />
-    <Compile Include="Assets/Scripts/DestroyAnimal.cs" />
+    <Compile Include="Assets/Scripts/AnimalSpawner.cs" />
+    <Compile Include="Assets/Scripts/MoveForward.cs" />
+    <Compile Include="Assets/Scripts/PlayerController.cs" />
     <Compile Include="Assets/Scripts/DestroyFood.cs" />
+    <Compile Include="Assets/Scripts/DestroyAnimal.cs" />
+    <Compile Include="Assets/Scripts/ScoreController.cs" />
+    <Compile Include="Assets/Scripts/LivesController.cs" />
+    <Compile Include="Assets/Scripts/EventManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Course Library/_Source_Files/_LICENSE.txt" />

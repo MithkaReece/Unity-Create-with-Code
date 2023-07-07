@@ -14,7 +14,11 @@ public class DestroyFood : MonoBehaviour
     {
         float currentX = transform.position.x;
         float currentZ = transform.position.z;
-        if (currentX > maxX || currentX < minX || currentZ > maxZ || currentZ < minZ)
+        if (currentX > maxX || currentX < minX ||
+            currentZ > maxZ || currentZ < minZ)
+        {
             Destroy(gameObject);
+            EventManager.TriggerRemoveLife();
+        }
     }
 }

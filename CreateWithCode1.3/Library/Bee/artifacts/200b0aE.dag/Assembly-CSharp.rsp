@@ -352,8 +352,11 @@
 "Assets/Scripts/DestroyAnimal.cs"
 "Assets/Scripts/DestroyFood.cs"
 "Assets/Scripts/EatFoodCollision.cs"
+"Assets/Scripts/EventManager.cs"
+"Assets/Scripts/LivesController.cs"
 "Assets/Scripts/MoveForward.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/ScoreController.cs"
 -langversion:9.0
 
 /deterministic
