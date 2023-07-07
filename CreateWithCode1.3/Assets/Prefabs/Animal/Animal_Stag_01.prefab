@@ -188,6 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390b57c69f3c648aab096bafca1debbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxHunger: 3
 --- !u!65 &5072315135756048400
 BoxCollider:
   m_ObjectHideFlags: 0

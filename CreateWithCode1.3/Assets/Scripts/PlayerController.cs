@@ -7,16 +7,18 @@ public class PlayerController : MonoBehaviour
     public GameObject[] FoodPrefabs;
     private float ThrowCooldown = 0.2f;
 
-    private float speed = 20f;
+    private float speed = 15f;
     private float minX = -20f;
     private float maxX = 20f;
 
     private float minZ = 0f;
     private float maxZ = 25f;
+
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     private float horizontalInput;
@@ -32,6 +34,9 @@ public class PlayerController : MonoBehaviour
 
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
+
+        float Speed_f = (Mathf.Abs(horizontalInput) + Mathf.Abs(verticalInput)) / 2f;
+        animator.SetFloat("Speed_f", Speed_f);
 
         float xTranslation = horizontalInput * speed * Time.deltaTime;
         float clampedX = Mathf.Clamp(transform.position.x + xTranslation, minX, maxX);
