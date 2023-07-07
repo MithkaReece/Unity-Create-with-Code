@@ -7,8 +7,13 @@ public class EatFoodCollision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
-        Destroy(gameObject);
-        EventManager.TriggerAddScore(1);
+        if (other.gameObject.CompareTag("Food"))
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+            EventManager.TriggerAddScore(1);
+        }else if (other.gameObject.CompareTag("Player")) {
+            EventManager.TriggerRemoveLife();
+        }
     }
 }
