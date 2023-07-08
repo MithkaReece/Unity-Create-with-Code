@@ -174,3 +174,9 @@ Received Import Request.
   path: Assets/Scenes/MyGame.unity
   artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/MyGame.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6632205b75b02546ceef9fd49abeca7') in 0.010263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 153.086103 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(58ee470bdc21443548f93fa284505e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(58ee470bdc21443548f93fa284505e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '534567de914eeb187030bbc28eb625e8') in 0.001147 seconds 
