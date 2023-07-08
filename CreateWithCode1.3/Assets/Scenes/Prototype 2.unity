@@ -474,6 +474,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5280954504326390211, guid: dfbacd2c56491475ab1a0f22af311eda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6987371737431871052, guid: dfbacd2c56491475ab1a0f22af311eda, type: 3}
       propertyPath: m_Name
       value: AnimalSpawner (2)
@@ -530,6 +534,10 @@ PrefabInstance:
       propertyPath: Right
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 8754313405108423820, guid: dfbacd2c56491475ab1a0f22af311eda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfbacd2c56491475ab1a0f22af311eda, type: 3}
 --- !u!1 &992285705
@@ -573,6 +581,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5280954504326390211, guid: dfbacd2c56491475ab1a0f22af311eda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6987371737431871052, guid: dfbacd2c56491475ab1a0f22af311eda, type: 3}
       propertyPath: m_Name
       value: AnimalSpawner (3)
@@ -628,6 +640,10 @@ PrefabInstance:
     - target: {fileID: 6987371737431871055, guid: dfbacd2c56491475ab1a0f22af311eda, type: 3}
       propertyPath: Right
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8754313405108423820, guid: dfbacd2c56491475ab1a0f22af311eda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfbacd2c56491475ab1a0f22af311eda, type: 3}
@@ -929,6 +945,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5280954504326390211, guid: dfbacd2c56491475ab1a0f22af311eda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6987371737431871052, guid: dfbacd2c56491475ab1a0f22af311eda, type: 3}
       propertyPath: m_Name
       value: AnimalSpawner
@@ -975,6 +995,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6987371737431871054, guid: dfbacd2c56491475ab1a0f22af311eda, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8754313405108423820, guid: dfbacd2c56491475ab1a0f22af311eda, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

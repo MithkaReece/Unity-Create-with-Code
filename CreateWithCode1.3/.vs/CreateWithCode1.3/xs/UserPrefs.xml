@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{3EFFC577-A865-2798-3535-E592B6FE0F78}|">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DestroyFood.cs">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a38d2677-6d99-4ae1-a648-ff6761fab089" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EatFoodCollision.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="21" Column="1" />
-      <File FileName="Assets/Scripts/MoveForward.cs" Line="16" Column="6" />
-      <File FileName="Assets/Scripts/EatFoodCollision.cs" Line="24" Column="2" />
-      <File FileName="Assets/AnimalSpawner.cs" Line="21" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/DestroyFood.cs" Line="16" Column="46" NotebookId="1" />
-      <File FileName="Assets/Scripts/DestroyAnimal.cs" Line="15" Column="36" NotebookId="1" />
+      <File FileName="Assets/Scripts/MoveForward.cs" />
+      <File FileName="Assets/Scripts/EatFoodCollision.cs" Line="39" Column="1" />
+      <File FileName="Assets/Scripts/LivesController.cs" Line="15" Column="28" />
+      <File FileName="Assets/Scripts/ScoreController.cs" Line="29" Column="1" />
+      <File FileName="Assets/Scripts/EventManager.cs" Line="18" Column="41" />
+      <File FileName="Assets/Scripts/DestroyFood.cs" Line="21" Column="46" NotebookId="1" />
+      <File FileName="Assets/Scripts/DestroyAnimal.cs" Line="17" Column="33" NotebookId="1" />
+      <File FileName="Assets/Scripts/AnimalSpawner.cs" Line="14" Column="34" NotebookId="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="10" Column="29" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,5 +27,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2d21ce20-9486-4b73-a1f8-a8c9b0de1e1b" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
