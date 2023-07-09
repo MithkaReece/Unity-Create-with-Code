@@ -8,13 +8,14 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public float gravityModifier;
 
-    private bool gameOver = false;
     private bool isGrounded = false;
     private Rigidbody rb;
+    private Animator playerAnimator;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        playerAnimator = GetComponent<Animator>();
         Physics.gravity *= gravityModifier;
     }
 
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
+            playerAnimator.SetTrigger("Jump_trig");
         }
     }
 
@@ -35,7 +37,6 @@ public class PlayerController : MonoBehaviour
             isGrounded = true;
         }else if (collision.gameObject.CompareTag("Obstacle"))
         {
-            gameOver = true;
             Debug.Log("Game Over!");
             EventManager.TriggerGameOver();
         }
