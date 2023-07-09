@@ -348,12 +348,16 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Scrips/AddScore.cs"
 "Assets/Scrips/BackgroundController.cs"
+"Assets/Scrips/CameraController.cs"
 "Assets/Scrips/EventManager.cs"
 "Assets/Scrips/MoveLeft.cs"
 "Assets/Scrips/PlayerController.cs"
 "Assets/Scrips/RemoveOutOfBounds.cs"
+"Assets/Scrips/ScoreManager.cs"
 "Assets/Scrips/SpawnManager.cs"
+"Assets/Scrips/SpeedManager.cs"
 -langversion:9.0
 
 /deterministic

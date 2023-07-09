@@ -51,6 +51,8 @@ public class PlayerController : MonoBehaviour
             isGrounded = true;
         }else if (collision.gameObject.CompareTag("Obstacle"))
         {
+            if (gameOver)
+                return;
             dirtParticle.Stop();
             gameOver = true;
             playerAnimator.SetBool("Death_b", true);

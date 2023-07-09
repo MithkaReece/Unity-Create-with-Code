@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BackgroundController : MonoBehaviour
 {
-    private float Speed = 15f;
     private Vector3 startPos;
     public float repeatLength = 56.4f;
     private bool gameOver = false;
@@ -21,8 +20,8 @@ public class BackgroundController : MonoBehaviour
     {
         if (gameOver)
             return;
-
-        transform.Translate(Speed * Time.deltaTime * Vector3.left);
+        float speed = SpeedManager.GetSpeed();
+        transform.Translate(speed * Time.deltaTime * Vector3.left);
 
         if(transform.position.x < startPos.x - repeatLength)
         {

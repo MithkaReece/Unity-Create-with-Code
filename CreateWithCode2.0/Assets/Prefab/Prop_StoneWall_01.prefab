@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 4033298307956643559}
   - component: {fileID: 75860523994893709}
   - component: {fileID: 1595179549428141933}
+  - component: {fileID: 3149548677140649444}
   m_Layer: 0
   m_Name: Prop_StoneWall_01
   m_TagString: Obstacle
@@ -172,3 +173,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3603977, y: 1.0485346, z: 4.7928314}
   m_Center: {x: -0.008446522, y: 0.546422, z: -0.11149788}
+--- !u!114 &3149548677140649444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7855298715534090984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecaf37a445bda435bad5e2db1a194477, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

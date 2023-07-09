@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
 {
-    private float speed = 15f;
     private bool gameOver = false;
     
 
@@ -18,8 +17,10 @@ public class MoveLeft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!gameOver)
-            transform.Translate(speed * Time.deltaTime * Vector3.left);
+        if (gameOver)
+            return;
+        float speed = SpeedManager.GetSpeed();
+        transform.Translate(speed * Time.deltaTime * Vector3.left);
     }
 
     void StopMoving()
