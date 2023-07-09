@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{615CD091-7CE5-4313-EF6C-11BCFAC7083F}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ModTheCube/Cube.cs">
+    <Files>
+      <File FileName="Assets/ModTheCube/Cube.cs" Line="23" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4b87b6d8-b471-4004-b96f-a358d50e0556" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
