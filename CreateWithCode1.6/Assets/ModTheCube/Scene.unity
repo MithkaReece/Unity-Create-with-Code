@@ -239,6 +239,7 @@ MonoBehaviour:
   RotationY: 0.687
   RotationZ: 0
   CubeColor: {r: 0.35561025, g: 0, b: 0.6320754, a: 0.7176471}
+  Randomize: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,7 +411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.24575162, y: 0.59969896, z: -0.20060495, w: -0.73465985}
-  m_LocalPosition: {x: 9.084052, y: 10.156225, z: -0.958809}
+  m_LocalPosition: {x: 6.24, y: 6.91, z: 0.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
