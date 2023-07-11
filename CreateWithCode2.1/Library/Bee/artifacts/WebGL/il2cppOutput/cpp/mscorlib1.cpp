@@ -22926,6 +22926,15 @@ IL_0032:
 		return L_6;
 	}
 }
+// System.Void System.CharEnumerator::Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharEnumerator_Reset_m731CE3C2670EA81BE60EEE301108D17010751B10 (CharEnumerator_tD01B8BB6885F5B73C03B665FA10D64B8B61B4A7D* __this, const RuntimeMethod* method) 
+{
+	{
+		__this->____currentElement_2 = 0;
+		__this->____index_1 = (-1);
+		return;
+	}
+}
 // System.Void System.CharEnumerator::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharEnumerator__ctor_mFAEB1FA3AE57D9D8265074397BCA22981C4D5FFD (CharEnumerator_tD01B8BB6885F5B73C03B665FA10D64B8B61B4A7D* __this, const RuntimeMethod* method) 
 {
