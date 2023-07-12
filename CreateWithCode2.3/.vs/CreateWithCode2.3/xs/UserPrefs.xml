@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{ED94CA05-2BC5-626A-8215-2672F3B63803}|">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4d5bfbdd-7ef0-445f-8b5e-66ac5bbefae5" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Challenge 4/Scripts/PlayerControllerX.cs">
+    <Files>
+      <File FileName="Assets/Challenge 4/Scripts/SpawnManagerX.cs" Line="61" Column="55" />
+      <File FileName="Assets/Challenge 4/Scripts/EnemyX.cs" Line="7" Column="43" />
+      <File FileName="Assets/Challenge 4/Scripts/PlayerControllerX.cs" Line="32" Column="27" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>

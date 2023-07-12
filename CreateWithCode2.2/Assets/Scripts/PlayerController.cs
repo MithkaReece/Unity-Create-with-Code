@@ -5,8 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     
-    public GameObject focalPoint;
-    public GameObject powerUpIndicator;
+    public GameObject FocalPoint;
+    public GameObject PowerUpIndicator;
+    public GameObject RocketPrefab;
     public float speed;
 
     private Rigidbody rb;
@@ -20,11 +21,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        powerUpIndicator.transform.position = transform.position + new Vector3(0,0,0);
-        powerUpIndicator.transform.Rotate(Vector3.up, Time.deltaTime * indicatorSpeed);
+        PowerUpIndicator.transform.position = transform.position + new Vector3(0,0,0);
+        PowerUpIndicator.transform.Rotate(Vector3.up, Time.deltaTime * indicatorSpeed);
 
         float forwardInput = Input.GetAxis("Vertical");
-        rb.AddForce(Time.deltaTime * focalPoint.transform.forward * speed * forwardInput);
+        rb.AddForce(Time.deltaTime * FocalPoint.transform.forward * speed * forwardInput);
     }
 
     private bool hasPowerUp;
@@ -34,8 +35,13 @@ public class PlayerController : MonoBehaviour
         {
             hasPowerUp = true;
             Destroy(other.gameObject);
-            powerUpIndicator.SetActive(true);
+            PowerUpIndicator.SetActive(true);
             StartCoroutine(PowerUpCountdownRoutine());
+        }
+        else if (other.CompareTag("RocketPowerUp"))
+        {
+            Destroy(other.gameObject);
+            Instantiate(RocketPrefab, transform.position + 2f * Vector3.forward, RocketPrefab.transform.rotation);
         }
 
         
@@ -59,6 +65,6 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(powerUpCooldown);
         hasPowerUp = false;
-        powerUpIndicator.SetActive(false);
+        PowerUpIndicator.SetActive(false);
     }
 }

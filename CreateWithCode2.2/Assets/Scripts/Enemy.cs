@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed;
+    public float Speed { private get; set; }
     public GameObject Player { private get; set; }
     public SpawnManager Spawner { private get; set; }
 
@@ -20,11 +20,11 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         Vector3 playerDirection = (Player.transform.position - transform.position).normalized;
-        rb.AddForce(Time.deltaTime * speed * playerDirection);
+        rb.AddForce(Time.deltaTime * Speed * playerDirection);
 
         if (transform.position.y < -10)
         {
-            Spawner.EnemyDied();
+            Spawner.EnemyDied(gameObject);
             Destroy(gameObject);
         }
     }

@@ -412,8 +412,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b18dd033559154fd88b55f083b6d3197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 8483008856584891586, guid: ce9f38ddeabc24865bf610747c67e968, type: 3}
-  powerUpPrefab: {fileID: 1313811960915748641, guid: b5ea96129af4440a5ae21eaaa7cef360, type: 3}
+  EnemyPrefab: {fileID: 8483008856584891586, guid: ce9f38ddeabc24865bf610747c67e968, type: 3}
+  EnemyStrongPrefab: {fileID: 8483008856584891586, guid: 55fdcbb2994784879b8746c1cca3dc91, type: 3}
+  PowerUpPrefab: {fileID: 1313811960915748641, guid: b5ea96129af4440a5ae21eaaa7cef360, type: 3}
+  RocketPowerUpPrefab: {fileID: 6768552017771989120, guid: ec708f4773c384a48a43948dd9eff586, type: 3}
   player: {fileID: 1579961030}
 --- !u!4 &1383747872
 Transform:
@@ -626,7 +628,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579961030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.094, z: 0}
+  m_LocalPosition: {x: 0, y: 0.094, z: -1.62}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -645,8 +647,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3de76174b9e440ddafded90626da4c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  focalPoint: {fileID: 1901688996}
-  powerUpIndicator: {fileID: 766968203}
+  FocalPoint: {fileID: 1901688996}
+  PowerUpIndicator: {fileID: 766968203}
+  RocketPrefab: {fileID: 5616815817346520504, guid: 666f94f936eff43d5aa82749adf31107, type: 3}
   speed: 300
 --- !u!1001 &1708305659
 PrefabInstance:
