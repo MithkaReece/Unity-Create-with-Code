@@ -4,9 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - PowerUp
   - Enemy
   - RocketPowerUp
+  - SmashPowerUp
+  - BuffPowerUp
+  - Ground
+  - Rocket
   layers:
   - Default
   - TransparentFX
@@ -15,8 +18,8 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 

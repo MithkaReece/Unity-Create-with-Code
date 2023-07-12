@@ -6,22 +6,27 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject EnemyPrefab;
     public GameObject EnemyStrongPrefab;
-    public GameObject PowerUpPrefab;
+    public GameObject BossPrefab;
+
+    public GameObject BuffPowerUpPrefab;
     public GameObject RocketPowerUpPrefab;
+    public GameObject SmashPowerUpPrefab;
     public GameObject player;
 
 
-    float spawnRange = 9;
+    public static float spawnRange = 9;
 
     int waveNumber = 1;
 
+    static SpawnManager instance;
 
     public static List<GameObject> ActiveEnemies { get; private set; }
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         ActiveEnemies = new List<GameObject>();
-        SpawnWave(waveNumber);
+        SpawnWave();
     }
 
     // Update is called once per frame
@@ -30,50 +35,92 @@ public class SpawnManager : MonoBehaviour
         if(ActiveEnemies.Count <= 0)
         {
             waveNumber++;
-            SpawnWave(waveNumber);
+            SpawnWave();
         }
         
     }
 
-    public void EnemyDied(GameObject enemy)
+    public static void EnemyDied(GameObject enemy)
     {
         ActiveEnemies.Remove(enemy);
     }
 
 
     float strongEnemyChance = 25f;
-    float missileChance = 25;
-    void SpawnWave(int spawnNumber)
+
+    float missileChance = 25f;
+    float smashChance = 30f;
+    void SpawnWave()
     {
         //Spawn powerups
-        Instantiate(PowerUpPrefab, new Vector3(Random.Range(-spawnRange, spawnRange), PowerUpPrefab.transform.position.y, Random.Range(-spawnRange, spawnRange)), PowerUpPrefab.transform.rotation);
-        if(Random.Range(0, 100f) < missileChance)
-        {
-            Instantiate(RocketPowerUpPrefab, new Vector3(Random.Range(-spawnRange, spawnRange), PowerUpPrefab.transform.position.y, Random.Range(-spawnRange, spawnRange)), PowerUpPrefab.transform.rotation);
-        }
+        SpawnRandomPrefab(BuffPowerUpPrefab);
+        if (Random.Range(0, 100f) < missileChance)
+            SpawnRandomPrefab(RocketPowerUpPrefab);
+        if (Random.Range(0, 100f) < smashChance)
+            SpawnRandomPrefab(SmashPowerUpPrefab);
 
         //Spawn enemies
-        for (int i = 0; i < spawnNumber; i++)
+        if (waveNumber % 5 == 0)
         {
-            GameObject enemyObj;
-            Enemy enemy;
-            if (Random.Range(0, 100f) < strongEnemyChance)
+            BossSpawning boss = CreateEnemy(BossPrefab, 1000f).GetComponent<BossSpawning>();
+            boss.spawningInterval = 25f / waveNumber;
+        }
+        else
+            for (int i = 0; i < waveNumber; i++)
             {
-                enemyObj = Instantiate(EnemyStrongPrefab, new Vector3(Random.Range(-spawnRange, spawnRange), 0, Random.Range(-spawnRange, spawnRange)), EnemyPrefab.transform.rotation);
-                enemy = enemyObj.GetComponent<Enemy>();
-                enemy.Speed = 500f;
+                if (Random.Range(0, 100f) < strongEnemyChance)
+                    SpawnStrongEnemy();
+                else
+                    SpawnNormalEnemy();
             }
-            else
-            {
-                enemyObj = Instantiate(EnemyPrefab, new Vector3(Random.Range(-spawnRange, spawnRange), 0, Random.Range(-spawnRange, spawnRange)), EnemyPrefab.transform.rotation);
-                enemy = enemyObj.GetComponent<Enemy>();
-                enemy.Speed = 300f;
-            }
+    }
 
-            enemy.Player = player;
-            enemy.Spawner = this;
+    public static void SpawnNormalEnemy()
+    {
+        instance.CreateEnemy(instance.EnemyStrongPrefab, 500f);
+    }
 
-            ActiveEnemies.Add(enemyObj);
+    public static void SpawnStrongEnemy()
+    {
+        instance.CreateEnemy(instance.EnemyPrefab, 300f);
+    }
+
+
+    GameObject CreateEnemy(GameObject prefab, float speed)
+    {
+        GameObject enemyObj = SpawnRandomPrefab(prefab);
+        Enemy enemy = enemyObj.GetComponent<Enemy>();
+        enemy.Speed = speed;
+        enemy.Player = player;
+        ActiveEnemies.Add(enemyObj);
+        return enemyObj;
+    }
+
+    GameObject SpawnRandomPrefab(GameObject prefab)
+    {
+        return Instantiate(prefab,
+                    new Vector3(Random.Range(-spawnRange, spawnRange),
+                    prefab.transform.position.y,
+                    Random.Range(-spawnRange, spawnRange)),
+                    prefab.transform.rotation);
+    }
+
+
+    private static string[] tagsToReset = new string[] { "RocketPowerUp", "SmashPowerUp", "BuffPowerUp", "Rocket" }; 
+    public static void Reset()
+    {
+        instance.waveNumber = 0;
+        foreach(GameObject enemy in ActiveEnemies)
+        {
+            Destroy(enemy);
+        }
+        ActiveEnemies.Clear();
+
+        // Iterate over all GameObjects in the scene
+        foreach (GameObject obj in FindObjectsOfType<GameObject>())
+        {
+            if (System.Array.IndexOf(tagsToReset, obj.tag) != -1)
+                Destroy(obj);
         }
     }
 }

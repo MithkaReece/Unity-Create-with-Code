@@ -61,8 +61,11 @@
     <Compile Include="Assets/Scripts/SpawnManager.cs" />
     <Compile Include="Assets/Scripts/Enemy.cs" />
     <Compile Include="Assets/Scripts/BobMovement.cs" />
-    <Compile Include="Assets/Homing.cs" />
+    <Compile Include="Assets/Scripts/Homing.cs" />
     <Compile Include="Assets/Scripts/EventManager.cs" />
+    <Compile Include="Assets/BuffIndicatorMovement.cs" />
+    <Compile Include="Assets/SmashIndicatorMovement.cs" />
+    <Compile Include="Assets/BossSpawning.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/AurynSky/Rockets Missiles and Bombs/READ ME.txt" />
