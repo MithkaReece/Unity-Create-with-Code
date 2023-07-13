@@ -461,6 +461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyPrefab: {fileID: 8483008856584891586, guid: ce9f38ddeabc24865bf610747c67e968, type: 3}
   EnemyStrongPrefab: {fileID: 8483008856584891586, guid: 55fdcbb2994784879b8746c1cca3dc91, type: 3}
+  BossPrefab: {fileID: 8483008856584891586, guid: ba856a295d387466f822b5907a5a5c91, type: 3}
   BuffPowerUpPrefab: {fileID: 1313811960915748641, guid: b5ea96129af4440a5ae21eaaa7cef360, type: 3}
   RocketPowerUpPrefab: {fileID: 6768552017771989120, guid: ec708f4773c384a48a43948dd9eff586, type: 3}
   SmashPowerUpPrefab: {fileID: 9099116045778433571, guid: 0fccc08249af34151890849f61f1ba24, type: 3}
