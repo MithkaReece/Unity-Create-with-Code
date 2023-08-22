@@ -78,35 +78,37 @@ extern void LivesController_Start_m6F9F0F8A4833798EA2264048D93767A735D69C4A (voi
 extern void LivesController_OnEnable_m27D32F15BD77A9DD65DB5B7418A22B0AB282D27B (void);
 // 0x00000021 System.Void LivesController::OnDisable()
 extern void LivesController_OnDisable_mEB2A98E0AC46A055D8168C8527EF75F0FC3AEC65 (void);
-// 0x00000022 System.Void LivesController::HandleRemoveLife()
+// 0x00000022 System.Void LivesController::OnGUI()
+extern void LivesController_OnGUI_m0A3CC9F8B484710DA62C681266387F0FA2743A28 (void);
+// 0x00000023 System.Void LivesController::DrawColoredTexture(UnityEngine.Rect,UnityEngine.Color)
+extern void LivesController_DrawColoredTexture_m3BEA10154FBF77D01B5F267AB31B8300C9931F19 (void);
+// 0x00000024 System.Void LivesController::HandleRemoveLife()
 extern void LivesController_HandleRemoveLife_m56B3B4867D5E1A7D382DF21622106047FDB4C441 (void);
-// 0x00000023 System.Void LivesController::.ctor()
+// 0x00000025 System.Void LivesController::.ctor()
 extern void LivesController__ctor_mEB84403D5FD18DB0345FC0718C064D73E7697987 (void);
-// 0x00000024 System.Void MoveForward::Start()
-extern void MoveForward_Start_m855C8845DD164176ABE2783E531BACB5175E2DB5 (void);
-// 0x00000025 System.Void MoveForward::Update()
+// 0x00000026 System.Void MoveForward::Update()
 extern void MoveForward_Update_mD81312348318C4D966DF1BF5E9EE399A13A2DD12 (void);
-// 0x00000026 System.Void MoveForward::.ctor()
+// 0x00000027 System.Void MoveForward::.ctor()
 extern void MoveForward__ctor_m81C13FBBF67BA14AF75B1FB3E1CFD1D11775771C (void);
-// 0x00000027 System.Void PlayerController::Start()
+// 0x00000028 System.Void PlayerController::Start()
 extern void PlayerController_Start_m1D83076E8B136A71051F2F02545EE04947D3A8CF (void);
-// 0x00000028 System.Void PlayerController::Update()
+// 0x00000029 System.Void PlayerController::Update()
 extern void PlayerController_Update_m1F4051EB5BCBCCE5EEE2E3E49B7E278C3B14EC33 (void);
-// 0x00000029 System.Void PlayerController::SpawnRandomFood()
+// 0x0000002A System.Void PlayerController::SpawnRandomFood()
 extern void PlayerController_SpawnRandomFood_m698395E218C8EC90C8FF85A53CED8658C37375BD (void);
-// 0x0000002A System.Void PlayerController::.ctor()
+// 0x0000002B System.Void PlayerController::.ctor()
 extern void PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33 (void);
-// 0x0000002B System.Void ScoreController::OnEnable()
+// 0x0000002C System.Void ScoreController::OnEnable()
 extern void ScoreController_OnEnable_m88C9495B2D90E8BF55C35C6C841FE300689CEA48 (void);
-// 0x0000002C System.Void ScoreController::OnDisable()
+// 0x0000002D System.Void ScoreController::OnDisable()
 extern void ScoreController_OnDisable_m49578F78FBFE6F62309AD396D779228DB354E374 (void);
-// 0x0000002D System.Void ScoreController::HandleAddScore(System.Int32)
+// 0x0000002E System.Void ScoreController::OnGUI()
+extern void ScoreController_OnGUI_mB1DBD53E06F1FFB0C34CCBE711B15B2F30CA3813 (void);
+// 0x0000002F System.Void ScoreController::HandleAddScore(System.Int32)
 extern void ScoreController_HandleAddScore_m53DBCF02CFC9279BC88B0E45D0560CC5C4A8A7EB (void);
-// 0x0000002E System.Void ScoreController::PrintScore()
-extern void ScoreController_PrintScore_m83A77E9638FC2C1073957277804F623CB8E5CCE9 (void);
-// 0x0000002F System.Void ScoreController::.ctor()
+// 0x00000030 System.Void ScoreController::.ctor()
 extern void ScoreController__ctor_m161DBF9A2ED8098CD117A438518B3C716F0BC5F7 (void);
-static Il2CppMethodPointer s_methodPointers[47] = 
+static Il2CppMethodPointer s_methodPointers[48] = 
 {
 	AnimalSpawner_Start_m34ACAECE756FEBB18E722C51EA09B8AB124CC679,
 	AnimalSpawner_Update_mFD88FC25FD33D5D31CFB20E8AC01C59B678C6130,
@@ -141,9 +143,10 @@ static Il2CppMethodPointer s_methodPointers[47] =
 	LivesController_Start_m6F9F0F8A4833798EA2264048D93767A735D69C4A,
 	LivesController_OnEnable_m27D32F15BD77A9DD65DB5B7418A22B0AB282D27B,
 	LivesController_OnDisable_mEB2A98E0AC46A055D8168C8527EF75F0FC3AEC65,
+	LivesController_OnGUI_m0A3CC9F8B484710DA62C681266387F0FA2743A28,
+	LivesController_DrawColoredTexture_m3BEA10154FBF77D01B5F267AB31B8300C9931F19,
 	LivesController_HandleRemoveLife_m56B3B4867D5E1A7D382DF21622106047FDB4C441,
 	LivesController__ctor_mEB84403D5FD18DB0345FC0718C064D73E7697987,
-	MoveForward_Start_m855C8845DD164176ABE2783E531BACB5175E2DB5,
 	MoveForward_Update_mD81312348318C4D966DF1BF5E9EE399A13A2DD12,
 	MoveForward__ctor_m81C13FBBF67BA14AF75B1FB3E1CFD1D11775771C,
 	PlayerController_Start_m1D83076E8B136A71051F2F02545EE04947D3A8CF,
@@ -152,65 +155,66 @@ static Il2CppMethodPointer s_methodPointers[47] =
 	PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33,
 	ScoreController_OnEnable_m88C9495B2D90E8BF55C35C6C841FE300689CEA48,
 	ScoreController_OnDisable_m49578F78FBFE6F62309AD396D779228DB354E374,
+	ScoreController_OnGUI_mB1DBD53E06F1FFB0C34CCBE711B15B2F30CA3813,
 	ScoreController_HandleAddScore_m53DBCF02CFC9279BC88B0E45D0560CC5C4A8A7EB,
-	ScoreController_PrintScore_m83A77E9638FC2C1073957277804F623CB8E5CCE9,
 	ScoreController__ctor_m161DBF9A2ED8098CD117A438518B3C716F0BC5F7,
 };
-static const int32_t s_InvokerIndices[47] = 
+static const int32_t s_InvokerIndices[48] = 
 {
-	1011,
-	1011,
-	1011,
-	878,
-	1004,
-	442,
-	1011,
-	1011,
-	1011,
-	1011,
-	1011,
-	878,
-	1011,
-	549,
-	1011,
-	1955,
-	1955,
-	1952,
-	1955,
-	1955,
-	1992,
-	1011,
-	538,
-	870,
-	276,
-	878,
-	538,
-	1011,
-	435,
-	878,
-	1011,
-	1011,
-	1011,
-	1011,
-	1011,
-	1011,
-	1011,
-	1011,
-	1011,
-	1011,
-	1011,
-	1011,
-	1011,
-	1011,
-	870,
-	1011,
-	1011,
+	1013,
+	1013,
+	1013,
+	880,
+	1006,
+	443,
+	1013,
+	1013,
+	1013,
+	1013,
+	1013,
+	880,
+	1013,
+	550,
+	1013,
+	1962,
+	1962,
+	1959,
+	1962,
+	1962,
+	2000,
+	1013,
+	539,
+	872,
+	277,
+	880,
+	539,
+	1013,
+	436,
+	880,
+	1013,
+	1013,
+	1013,
+	1013,
+	550,
+	1013,
+	1013,
+	1013,
+	1013,
+	1013,
+	1013,
+	1013,
+	1013,
+	1013,
+	1013,
+	1013,
+	872,
+	1013,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	47,
+	48,
 	s_methodPointers,
 	0,
 	NULL,

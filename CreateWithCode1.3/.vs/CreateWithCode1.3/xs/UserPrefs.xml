@@ -1,22 +1,28 @@
 ﻿<Properties StartupConfiguration="{3EFFC577-A865-2798-3535-E592B6FE0F78}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AnimalSpawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LivesController.cs">
     <Files>
-      <File FileName="Assets/Scripts/MoveForward.cs" />
-      <File FileName="Assets/Scripts/EatFoodCollision.cs" Line="39" Column="1" />
-      <File FileName="Assets/Scripts/LivesController.cs" />
-      <File FileName="Assets/Scripts/ScoreController.cs" />
+      <File FileName="Assets/Scripts/EatFoodCollision.cs" Line="40" Column="1" />
+      <File FileName="Assets/Scripts/ScoreController.cs" Line="36" Column="1" />
       <File FileName="Assets/Scripts/EventManager.cs" Line="18" Column="41" />
-      <File FileName="Assets/Scripts/DestroyFood.cs" NotebookId="1" />
-      <File FileName="Assets/Scripts/DestroyAnimal.cs" NotebookId="1" />
-      <File FileName="Assets/Scripts/AnimalSpawner.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="10" Column="29" NotebookId="1" />
+      <File FileName="Assets/Scripts/LivesController.cs" Line="55" Column="78" NotebookId="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CreateWithCode1.3" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="005cd84b-28cb-47f8-9ad9-3b93571e798a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="68dc002d-256c-4e9f-8ed1-5a8c0dbfe356" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

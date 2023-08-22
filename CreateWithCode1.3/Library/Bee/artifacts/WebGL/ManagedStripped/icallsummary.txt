@@ -5,6 +5,7 @@ UnityEngine.AnimationCurve::Internal_Create
 UnityEngine.AnimationCurve::Internal_Destroy
 UnityEngine.Animations.AnimationLayerMixerPlayable::SetSingleLayerOptimizationInternal
 UnityEngine.Animator::SetFloatString
+UnityEngine.AsyncOperation::InternalDestroy
 UnityEngine.Camera::GetAllCamerasCount
 UnityEngine.Camera::GetAllCamerasImpl
 UnityEngine.Camera::get_cullingMask
@@ -70,8 +71,10 @@ UnityEngine.GUI::get_blendMaterial
 UnityEngine.GUI::get_blitMaterial
 UnityEngine.GUI::get_roundedRectMaterial
 UnityEngine.GUI::get_roundedRectWithColorPerBorderMaterial
+UnityEngine.GUIClip::get_visibleRect_Injected
 UnityEngine.GUILayoutUtility::Internal_GetWindowRect_Injected
 UnityEngine.GUILayoutUtility::Internal_MoveWindow_Injected
+UnityEngine.GUIStyle::IsTooltipActive
 UnityEngine.GUIStyle::get_stretchHeight
 UnityEngine.GUIStyle::get_stretchWidth
 UnityEngine.GUIStyle::GetRectOffsetPtr
@@ -84,6 +87,7 @@ UnityEngine.GUIStyle::Internal_Destroy
 UnityEngine.GUIStyle::Internal_Draw2_Injected
 UnityEngine.GUIStyle::Internal_Draw_Injected
 UnityEngine.GUIStyle::SetDefaultFont
+UnityEngine.GUIStyle::SetMouseTooltip_Injected
 UnityEngine.GUIStyle::set_rawName
 UnityEngine.GUIStyle::set_stretchHeight
 UnityEngine.GUIStyleState::Init
@@ -183,6 +187,11 @@ UnityEngine.RenderTexture::set_depthStencilFormat
 UnityEngine.RenderTexture::set_graphicsFormat
 UnityEngine.RenderTexture::set_height
 UnityEngine.RenderTexture::set_width
+UnityEngine.SceneManagement.Scene::GetBuildIndexInternal
+UnityEngine.SceneManagement.SceneManager::get_sceneCount
+UnityEngine.SceneManagement.SceneManager::GetActiveScene_Injected
+UnityEngine.SceneManagement.SceneManager::GetSceneAt_Injected
+UnityEngine.SceneManagement.SceneManagerAPIInternal::LoadSceneAsyncNameIndexInternal_Injected
 UnityEngine.Screen::get_height
 UnityEngine.Screen::get_width
 UnityEngine.ScriptableObject::CreateScriptableObject

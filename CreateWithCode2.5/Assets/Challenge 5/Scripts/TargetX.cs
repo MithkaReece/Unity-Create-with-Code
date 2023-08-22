@@ -14,7 +14,8 @@ public class TargetX : MonoBehaviour
     private float minValueX = -3.75f; // the x value of the center of the left-most square
     private float minValueY = -3.75f; // the y value of the center of the bottom-most square
     private float spaceBetweenSquares = 2.5f; // the distance between the centers of squares on the game board
-    
+
+    private bool isHovered;
 
     void Start()
     {
@@ -26,16 +27,28 @@ public class TargetX : MonoBehaviour
 
     }
 
-    // When target is clicked, destroy it, update score, and generate explosion
-    private void OnMouseEnter()
+    private void Update()
     {
-        if (gameManagerX.isGameActive)
+        if (Input.GetMouseButton(0) && isHovered)
         {
             Destroy(gameObject);
             gameManagerX.UpdateScore(pointValue);
             Explode();
         }
-               
+    }
+
+    // When target is clicked, destroy it, update score, and generate explosion
+    private void OnMouseEnter()
+    {
+        if (!gameManagerX.isGameActive)
+            return;
+
+        isHovered = true;
+    }
+
+    private void OnMouseExit()
+    {
+        isHovered = false;
     }
 
     // Generate a random spawn position based on a random index from 0 to 3
@@ -63,7 +76,7 @@ public class TargetX : MonoBehaviour
 
         if (other.gameObject.CompareTag("Sensor") && !gameObject.CompareTag("Bad"))
         {
-            gameManagerX.GameOver();
+            //gameManagerX.GameOver();
         } 
 
     }
