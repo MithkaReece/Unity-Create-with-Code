@@ -57,15 +57,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/PlayerController.cs" />
-    <Compile Include="Assets/Scripts/RotateCamera.cs" />
-    <Compile Include="Assets/Scripts/SpawnManager.cs" />
-    <Compile Include="Assets/Scripts/Enemy.cs" />
-    <Compile Include="Assets/Scripts/BobMovement.cs" />
-    <Compile Include="Assets/Scripts/Homing.cs" />
     <Compile Include="Assets/Scripts/EventManager.cs" />
+    <Compile Include="Assets/Scripts/BobMovement.cs" />
+    <Compile Include="Assets/Scripts/RotateCamera.cs" />
     <Compile Include="Assets/BuffIndicatorMovement.cs" />
-    <Compile Include="Assets/SmashIndicatorMovement.cs" />
+    <Compile Include="Assets/Scripts/SpawnManager.cs" />
     <Compile Include="Assets/BossSpawning.cs" />
+    <Compile Include="Assets/Scripts/Enemy.cs" />
+    <Compile Include="Assets/Scripts/Homing.cs" />
+    <Compile Include="Assets/SmashIndicatorMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/AurynSky/Rockets Missiles and Bombs/READ ME.txt" />
@@ -729,6 +729,9 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Play.Publisher.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.Play.Publisher.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -740,6 +743,9 @@
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridgeDev.001">
+      <HintPath>Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
       <HintPath>Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
